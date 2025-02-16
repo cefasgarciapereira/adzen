@@ -36,7 +36,7 @@ const items = [
 
 export function AppSidebar() {
     return (
-        <Sidebar className="dark:bg-gray-900 dark:text-gray-300 border-none">
+        <Sidebar className="dark:bg-gray-900 dark:text-gray-50 border-none">
             <SidebarContent>
                 <SidebarGroup>
                     <SidebarGroupLabel>AdZen</SidebarGroupLabel>
