@@ -21,7 +21,10 @@ export default function ManualPage() {
                 <List.Li>
                     <Typography.P>
                         Acesse o{' '}
-                        <Typography.A href="https://developers.facebook.com/apps" target='_blank'>
+                        <Typography.A
+                            href="https://developers.facebook.com/apps"
+                            target="_blank"
+                        >
                             Facebook Apps
                         </Typography.A>{' '}
                         e crie um App caso ainda não possua, se já possuir apps
@@ -42,7 +45,10 @@ export default function ManualPage() {
                 <List.Li>
                     <Typography.P>
                         Copie o token acessando{' '}
-                        <Typography.A href="https://developers.facebook.com/tools/explorer/" target='_blank'>
+                        <Typography.A
+                            href="https://developers.facebook.com/tools/explorer/"
+                            target="_blank"
+                        >
                             API Graph Explorer
                         </Typography.A>
                         . O token deverá estar ao lado direito da tela no campo{' '}
@@ -72,7 +78,10 @@ export default function ManualPage() {
                 Vá à seção de <a href="/schedules">Agendamentos</a> e preencha o
                 formulário indicando o ID do anúncio, que você consegue acessar
                 no{' '}
-                <Typography.A href="https://adsmanager.facebook.com/adsmanager" target='_blank'>
+                <Typography.A
+                    href="https://adsmanager.facebook.com/adsmanager"
+                    target="_blank"
+                >
                     Facebook Ads Manager
                 </Typography.A>
                 , a data de disparo da ação e qual status você deseja que o

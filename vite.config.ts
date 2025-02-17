@@ -7,18 +7,18 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
     plugins: [
-        react(), 
+        react(),
         tailwindcss(),
         Unfonts({
             custom: {
-              families: [
-                {
-                  name: 'Geist',
-                  src: './src/assets/fonts/geist/*.woff2',
-                },
-              ],
+                families: [
+                    {
+                        name: 'Geist',
+                        src: './src/assets/fonts/geist/*.woff2',
+                    },
+                ],
             },
-          }),
+        }),
     ],
     resolve: {
         alias: {
