@@ -11,10 +11,10 @@ const initialSchedule: Schedule = {
     id: '',
     adId: '',
     date: '',
-    status: 'paused'
+    status: 'paused',
 }
 
-function newId(): string{
+function newId(): string {
     return `${new Date().toISOString()}_${Math.random()}`
 }
 
@@ -32,11 +32,13 @@ export default function SchedulesPage() {
     }
 
     function handleSubmit() {
-        if(!schedule.id){
-            setSchedules([...schedules, {...schedule, id: newId()}])
-        }else{
-
-            setSchedules([...schedules.filter(item => item.id !== schedule.id), schedule])
+        if (!schedule.id) {
+            setSchedules([...schedules, { ...schedule, id: newId() }])
+        } else {
+            setSchedules([
+                ...schedules.filter((item) => item.id !== schedule.id),
+                schedule,
+            ])
         }
 
         setSchedule(initialSchedule)

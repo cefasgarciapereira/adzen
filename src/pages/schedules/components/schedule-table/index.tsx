@@ -42,10 +42,20 @@ export function ScheduleTable(props: ScheduleTableProps) {
                         </TableCell>
                         <div>
                             <TableCell>
-                                <Button variant="ghost" onClick={() => props.onEdit(schedule)}>Editar</Button>
+                                <Button
+                                    variant="ghost"
+                                    onClick={() => props.onEdit(schedule)}
+                                >
+                                    Editar
+                                </Button>
                             </TableCell>
                             <TableCell>
-                                <Button variant="ghost" onClick={() => props.onDelete(schedule)}>Excluir</Button>
+                                <Button
+                                    variant="ghost"
+                                    onClick={() => props.onDelete(schedule)}
+                                >
+                                    Excluir
+                                </Button>
                             </TableCell>
                         </div>
                     </TableRow>
