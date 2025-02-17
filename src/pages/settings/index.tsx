@@ -1,5 +1,6 @@
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
+import { Label } from '@/components/ui/label'
 import useFacebookToken from '@/hooks/use-facebook-token'
 
 export default function Settings() {
@@ -21,11 +22,16 @@ export default function Settings() {
     return (
         <div>
             <div className="max-w-96 place-items-end">
-                <Input
-                    placeholder="Facebook Token"
-                    onChange={handleChange}
-                    value={facebookToken}
-                />
+                <div className="w-full">
+                    <Label htmlFor="facebookToken">Facebook Token</Label>
+                    <Input
+                        placeholder="Facebook Token"
+                        onChange={handleChange}
+                        value={facebookToken}
+                        type="text"
+                        id="facebookToken"
+                    />
+                </div>
                 <div>
                     <Button
                         className="mt-4 mr-2"
